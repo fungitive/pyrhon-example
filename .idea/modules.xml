@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ppt-pdf.iml" filepath="$PROJECT_DIR$/.idea/ppt-pdf.iml" />
+      <module fileurl="file://H:/python-example/.idea/ppt-pdf.iml" filepath="H:/python-example/.idea/ppt-pdf.iml" />
+      <module fileurl="file://H:/python-test/.idea/python-test.iml" filepath="H:/python-test/.idea/python-test.iml" />
     </modules>
   </component>
 </project>
