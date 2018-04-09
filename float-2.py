@@ -1,4 +1,7 @@
-解二次方程
+#/usr/bin/env python
+# -*- coding:utf-8 -*-
+# Author:Wangj
+#解二次方程
 import cmath
 
 a = float(input('输入 a: '))
