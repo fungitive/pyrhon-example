@@ -1,0 +1,374 @@
+<!Doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta property="qc:admins" content="465267610762567726375" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Python3 运算符</title>
+  <link rel='dns-prefetch' href='//s.w.org' />
+<meta name="keywords" content="Python3 运算符">
+  <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+  <meta name="apple-mobile-web-app-title" content="python运算符">
+</head>
+<body>
+<!--  头部 -->
+<div class="container main">
+  <div class="row"><div class="col middle-column">
+    <div class="article">
+      <div class="article-body">
+		
+			<div class="article-intro" id="content">
+			
+			<h1>Python3 <span class="color_h1">运算符</span></h1>
+<hr>
+<p>Python语言支持以下类型的运算符:</p>
+<ul>
+<li><a href="#ysf1">算术运算符</a></li>
+<li><a href="#ysf2">比较（关系）运算符</a></li>
+<li><a href="#ysf3">赋值运算符</a></li>
+<li><a href="#ysf4">逻辑运算符</a></li>
+<li><a href="#ysf5">位运算符</a></li>
+<li><a href="#ysf6">成员运算符</a></li>
+<li><a href="#ysf7">身份运算符</a></li>
+<li><a href="#ysf8">运算符优先级</a></li>
+</ul>
+<hr>
+<h2 id="ysf1">Python算术运算符</h2>
+<p>以下假设变量a为10，变量b为21：</p>
+<table class="reference">
+<tbody><tr>
+<th>运算符</th><th>描述</th><th>实例</th>
+</tr>
+<tr>
+<td>+</td><td>加 - 两个对象相加</td><td> a + b 输出结果 31</td>
+</tr>
+<tr>
+<td>-</td><td>减 - 得到负数或是一个数减去另一个数</td><td> a - b 输出结果 -11</td>
+</tr>
+<tr>
+<td>*</td><td>乘 - 两个数相乘或是返回一个被重复若干次的字符串</td><td> a * b 输出结果 210</td>
+</tr>
+<tr>
+<td>/</td><td>除 - x 除以 y</td><td> b / a 输出结果 2.1</td>
+</tr>
+<tr>
+<td>%</td><td>取模 - 返回除法的余数</td><td> b % a 输出结果 1</td>
+</tr>
+<tr>
+<td>**</td><td>幂 - 返回x的y次幂</td><td> a**b 为10的21次方</td>
+</tr>
+<tr>
+<td>//</td><td>取整除 - 返回商的整数部分</td><td> 9//2 输出结果 4 , 9.0//2.0 输出结果 4.0</td>
+</tr>
+</tbody></table>
+<hr><h2 id="ysf2">Python比较运算符</h2>
+<p>以下假设变量a为10，变量b为20：</p>
+<table class="reference">
+<tbody><tr>
+<th width="10%">运算符</th><th>描述</th><th>实例</th>
+</tr>
+<tr>
+<td>==</td><td> 等于 - 比较对象是否相等</td><td> (a == b) 返回 False。 </td>
+</tr>
+<tr>
+<td>!=</td><td> 不等于 - 比较两个对象是否不相等</td><td> (a != b) 返回 True。 </td>
+</tr>
+
+<tr>
+<td>&gt;</td><td> 大于 - 返回x是否大于y</td><td> (a &gt; b) 返回 False。</td>
+</tr>
+<tr>
+<td>&lt;</td><td> 小于 - 返回x是否小于y。所有比较运算符返回1表示真，返回0表示假。这分别与特殊的变量True和False等价。注意，这些变量名的大写。</td><td> (a &lt; b) 返回 True。 </td>
+</tr>
+<tr>
+<td>&gt;=</td><td> 大于等于 - 返回x是否大于等于y。</td><td> (a &gt;= b) 返回 False。</td>
+
+</tr>
+<tr>
+<td>&lt;=</td><td> 小于等于 - 返回x是否小于等于y。</td><td> (a &lt;= b) 返回 True。 </td>
+</tr>
+</tbody></table>
+<hr><h2 id="ysf3">Python赋值运算符</h2> 
+<p>以下假设变量a为10，变量b为20：</p>
+<table class="reference">
+<tbody><tr>
+<th>运算符</th><th>描述</th><th>实例</th>
+</tr>
+<tr>
+<td>=</td><td>简单的赋值运算符</td><td> c = a + b 将 a + b 的运算结果赋值为 c</td>
+</tr>
+<tr>
+<td>+=</td><td>加法赋值运算符</td><td> c += a 等效于 c = c + a</td>
+</tr>
+<tr>
+<td>-=</td><td>减法赋值运算符</td><td> c -= a 等效于 c = c - a</td>
+</tr>
+<tr>
+<td>*=</td><td>乘法赋值运算符</td><td> c *= a 等效于 c = c * a</td>
+</tr>
+<tr>
+<td>/=</td><td>除法赋值运算符</td><td> c /= a 等效于 c = c / a</td>
+</tr>
+<tr>
+<td>%=</td><td>取模赋值运算符</td><td> c %= a 等效于 c = c % a</td>
+</tr>
+<tr>
+<td>**=</td><td>幂赋值运算符</td><td> c **= a 等效于 c = c ** a</td>
+</tr>
+<tr>
+<td>//=</td><td> 取整除赋值运算符</td><td> c //= a 等效于 c = c // a</td>
+</tr>
+</tbody></table>
+<hr><h2 id="ysf5">Python位运算符</h2> 
+<p>
+按位运算符是把数字看作二进制来进行计算的。Python中的按位运算法则如下：</p>
+<p>下表中变量 a 为 60，b 为 13二进制格式如下：</p>
+<pre>
+a = 0011 1100
+
+b = 0000 1101
+
+-----------------
+
+a&amp;b = 0000 1100
+
+a|b = 0011 1101
+
+a^b = 0011 0001
+
+~a  = 1100 0011</pre>
+<table class="reference">
+<tbody><tr>
+<th>运算符</th><th>描述</th><th>实例</th>
+</tr>
+<tr>
+<td>&amp;</td><td>按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0</td><td> (a &amp; b) 输出结果 12 ，二进制解释： 0000 1100</td>
+</tr>
+<tr>
+<td>|</td><td> 按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1。</td><td> (a | b) 输出结果 61 ，二进制解释： 0011 1101</td>
+</tr>
+<tr>
+<td>^</td><td>按位异或运算符：当两对应的二进位相异时，结果为1 </td><td> (a ^ b) 输出结果 49 ，二进制解释： 0011 0001</td>
+</tr>
+<tr>
+<td>~</td><td> 按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1。<span class="marked">~x</span> 类似于 <span class="marked">-x-1</span> </td><td> (~a ) 输出结果 -61 ，二进制解释： 1100 0011， 在一个有符号二进制数的补码形式。</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td><td>左移动运算符：运算数的各二进位全部左移若干位，由"&lt;&lt;"右边的数指定移动的位数，高位丢弃，低位补0。</td><td> a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td><td>右移动运算符：把"&gt;&gt;"左边的运算数的各二进位全部右移若干位，"&gt;&gt;"右边的数指定移动的位数 </td><td> a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111</td>
+</tr>
+</tbody></table>
+<hr><h2 id="ysf4">Python逻辑运算符</h2>
+<p>Python语言支持逻辑运算符，以下假设变量 a 为 10, b为 20:</p>
+
+<table class="reference">
+<tbody><tr>
+<th>运算符</th><th>逻辑表达式</th><th>描述</th><th>实例</th>
+</tr>
+<tr>
+<td>and</td><td>x and y</td><td> 布尔"与" - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。  </td><td> (a and b) 返回 20。</td>
+</tr>
+<tr>
+<td>or</td><td>x or y</td><td>布尔"或" - 如果 x 是 True，它返回 x 的值，否则它返回 y 的计算值。</td><td> (a or b) 返回 10。</td>
+</tr>
+<tr><td>not</td><td>not x</td><td>布尔"非" - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td><td> not(a and b) 返回 False </td>
+</tr>
+</tbody></table>
+<hr><h2 id="ysf6">Python成员运算符</h2> 
+<p>除了以上的一些运算符之外，Python还支持成员运算符，测试实例中包含了一系列的成员，包括字符串，列表或元组。</p>
+<table class="reference">
+<tbody><tr>
+<th>运算符</th><th>描述</th><th>实例</th>
+</tr>
+<tr>
+<td>in</td><td>
+如果在指定的序列中找到值返回 True，否则返回 False。</td>
+<td> x 在 y 序列中 , 如果 x 在 y 序列中返回 True。</td>
+</tr>
+<tr>
+<td>not in</td><td>如果在指定的序列中没有找到值返回 True，否则返回 False。</td>
+<td>x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</td>
+</tr>
+</tbody></table>
+<hr><h2 id="ysf7">Python身份运算符</h2>
+<p> 
+身份运算符用于比较两个对象的存储单元</p>
+<table class="reference">
+<tbody><tr>
+<th width="10%">运算符</th><th>描述</th><th>实例</th>
+</tr>
+<tr>
+<td>is</td><td>
+is 是判断两个标识符是不是引用自一个对象</td><td> <strong>x is y</strong>, 类似 <strong>id(x) == id(y)</strong> , 如果引用的是同一个对象则返回 True，否则返回 False</td>
+</tr>
+<tr>
+<td>is not</td><td>is not 是判断两个标识符是不是引用自不同对象</td><td><strong> x is not y</strong> ， 类似 <strong>id(a) != id(b)</strong>。如果引用的不是同一个对象则返回结果 True，否则返回 False。 </td>
+</tr>
+</tbody></table>
+<p><strong>注：</strong> <a href="/python/python-func-id.html" target="_blank">id()</a> 函数用于获取对象内存地址。</p>
+<blockquote>
+  <div class="example">
+    <div class="example_code"> </div>
+</div></blockquote>
+<hr><h2 id="ysf8">Python运算符优先级</h2>
+<p>以下表格列出了从最高到最低优先级的所有运算符：</p>
+<table class="reference">
+<tbody><tr><th>运算符</th><th>描述</th></tr>
+<tr>
+<td>**</td>
+<td>指数 (最高优先级)</td>
+</tr><tr>
+<td>~ + -</td>
+<td>按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</td>
+</tr><tr>
+<td>* / % //</td>
+<td>乘，除，取模和取整除</td>
+</tr><tr>
+<td>+ -</td>
+<td>加法减法</td>
+</tr><tr>
+<td>&gt;&gt; &lt;&lt;</td>
+<td>右移，左移运算符</td>
+</tr><tr>
+<td>&amp;</td>
+<td>位 'AND'</td>
+</tr><tr>
+<td>^ |</td>
+<td>位运算符</td>
+</tr><tr>
+<td>&lt;= &lt; &gt; &gt;=</td>
+<td>比较运算符</td>
+</tr><tr>
+<td>&lt;&gt; == !=</td>
+<td>等于运算符</td>
+</tr>
+<tr>
+<td>= %= /= //= -= += *= **=</td>
+<td>赋值运算符</td>
+</tr>
+<tr>
+<td>is is not</td>
+<td>身份运算符</td>
+</tr>
+<tr>
+<td>in not in</td>
+<td>成员运算符</td>
+</tr><tr>
+<td>not or and</td>
+<td>逻辑运算符</td>
+</tr>
+</tbody></table>
+
+</div>
+			
+		</div>
+		
+		<div class="previous-next-links">
+			<div class="previous-design-link"><i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i></div>
+</div>
+		<!-- 笔记列表 -->
+		<style>
+.wrapper {
+  /*text-transform: uppercase; */
+  background: #ececec;
+  color: #555;
+  cursor: help;
+  font-family: "Gill Sans", Impact, sans-serif;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper .tooltip {
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: left;
+  background: #96b97d;
+  bottom: 100%;
+  color: #fff;
+  display: block;
+  left: -25px;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 14px;
+  pointer-events: none;
+  position: absolute;
+  
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+     -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+      -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+       -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+.tooltip a {
+	color:#fff;
+}
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}  
+
+/* CSS Triangles - see Trevor's post */
+.wrapper .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid #96b97d 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 20%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+.wrapper .tooltip1 {
+	margin-left: 50px;
+	padding-top: 0px;
+}
+.wrapper:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .tooltip {
+  display: none;
+}
+
+.lte8 .wrapper:hover .tooltip {
+  display: block;
+}
+
+</style>
+
+    </div>
+  </div></div>
+</div>
+</body>
+</html>
