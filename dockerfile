@@ -33,3 +33,6 @@ RUN pip3 install --no-cache-dir -r /tmp/require.txt -i http://mirrors.aliyun.com
 
 EXPOSE 22
 EXPOSE 8000
+
+
+#vi报错解决方法 export TERM=xterm
