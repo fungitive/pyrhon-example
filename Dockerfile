@@ -10,7 +10,7 @@ RUN yum install -y wget
 RUN wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 RUN yum makecache
 
-RUN yum install -y  gcc zlib-devel make curl wget tar openssl-devel python-devel openssh-server
+RUN yum install -y  gcc zlib-devel make curl wget tar openssl-devel python-devel openssh-server perl-devel
 
 RUN mkdir /var/run/sshd
 CMD ["sshd_run.sh"]
