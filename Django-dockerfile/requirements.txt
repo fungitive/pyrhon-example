@@ -1,0 +1,4 @@
+Django
+Pillow  #图片处理插件
+KindEditor #富文本编辑器
+haystack #全文搜索
