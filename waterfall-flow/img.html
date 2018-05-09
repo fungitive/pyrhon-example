@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .w {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .item {
+        width: 24%;
+        float: left;
+        padding:5px;
+    }
+    .item img{
+        width: 100%;
+    }
+    .title{
+        line-height: 0px;
+        font-size: 14px;
+        padding: 3px;
+        text-align: center;
+    }
+</style>
+<body>
+<div>
+    <div>
+        <h3 style="text-align: center;">项目案例</h3>
+    </div>
+        <div class="w" id="container">
+
+        <div class="item">
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+
+    </div>
+
+<script src="/static/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            var obj = new ScrollImg() ;
+            obj.initImg();
+            obj.scrollEvent();
+        });
+        function ScrollImg() {
+            this.NID = 0;
+            this.lastPostion = 3;
+            this.initImg = function () {
+                var that = this;
+                $.ajax({
+                    url: '/get_imgs.html',
+                    type: 'GET',
+                    data: {nid: that.NID},
+                    dataType: 'JSON',
+                    success: function (arg) {
+                        var img_list = arg.data;
+                        $.each(img_list, function (index, v) {
+                            var eqv = (index + that.lastPostion + 1) % 4;
+                            var tag = document.createElement('img');
+                            var html = "";
+                            tag.src = '/' + v.src;
+                            tag.href = v.id;
+                            tag.title = v.title;
+                            tag.summary = v.summary;
+                            html += "<a href=" + tag.href + "><img src=" + tag.src + " ></a>";
+                            html += "<p class='title'><a href=" + tag.href + ">" + tag.title + "</a>" + "</p>";
+                            html += "<p class='title'>" + tag.summary + "</p>";
+                            $('#container').children().eq(eqv).append(html);
+                            if (index + 1 == img_list.length) {
+                                //that.NID = v.id;
+                                that.lastPostion = eqv;
+                            }
+
+                        })
+
+                    }
+
+                })
+            };
+            this.scrollEvent = function () {
+                var that = this;
+                $(window).scroll(function () {
+                    var docHeight = $(document).height();
+                    //文档高度
+                    var winHeight = $(window).height();
+                    //窗口高度
+                    var scrollTop = $(window).scrollTop();
+                    //滚动高度
+                    if (winHeight + scrollTop == docHeight) {
+                        that.initImg();
+                    }
+                })
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
